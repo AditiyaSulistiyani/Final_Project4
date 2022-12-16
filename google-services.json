@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "13106746857",
+    "project_id": "buxbus-120101",
+    "storage_bucket": "buxbus-120101.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13106746857:android:4c62949620426741afa778",
+        "android_client_info": {
+          "package_name": "com.kampusmerdeka.finalproject4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13106746857-nd0fbj668psu0soobnoabo2jk1fvi0s4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kampusmerdeka.finalproject4",
+            "certificate_hash": "d433ec7dbdf4c500e58de045b8c0f71ec8dcbb66"
+          }
+        },
+        {
+          "client_id": "13106746857-5mfroktednqnthfrehq66i3nfpfimhvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC84M6fBkQDmR-512WRmDQssT2vFHgJGK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13106746857-5mfroktednqnthfrehq66i3nfpfimhvm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#dae1ed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.SearchFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/gambarbis3"
+        android:layout_marginTop="80dp" />
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="#f0f2f5"
+        android:paddingTop="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:layout_marginTop="25dp"
+            android:id="@+id/imgLocation"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_location"
+            android:paddingTop="5dp" />
+        <ImageView
+            android:id="@+id/imgArah"
+            android:layout_below="@+id/imgLocation"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arahbawah"
+            android:paddingTop="5dp" />
+        <ImageView
+            android:id="@+id/imgATarget"
+            android:layout_below="@+id/imgArah"
+            android:layout_width="20dp"
+            android:layout_marginLeft="4dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_target"
+            android:paddingTop="5dp" />
+        <ImageView
+            android:id="@+id/imgPeople"
+            android:layout_below="@+id/imgATarget"
+            android:layout_width="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="4dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_people_24"
+            android:paddingTop="5dp" />
+        <ImageView
+            android:id="@+id/imgDate"
+            android:layout_below="@+id/edtArrival"
+            android:layout_width="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/edtPassanger"
+            android:layout_marginLeft="4dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_tgl"
+            android:paddingTop="5dp" />
+        <TextView
+            android:id="@+id/txtDeparture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imgLocation" />
+
+        <EditText
+            android:id="@+id/edtDeparture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDeparture"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/imgATarget" />
+        <TextView
+            android:id="@+id/txtArrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrival"
+            android:layout_below="@+id/edtDeparture"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imgATarget" />
+
+        <EditText
+            android:id="@+id/edtArrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtArrival"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/imgATarget" />
+
+        <TextView
+            android:id="@+id/txtPassanger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtArrival"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imgPeople"
+            android:text="Passanger" />
+
+        <EditText
+            android:id="@+id/edtPassanger"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassanger"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/imgPeople" />
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtArrival"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imgDate"
+            android:text="Date"/>
+
+        <EditText
+            android:id="@+id/edtDate"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassanger"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/imgDate"
+            android:inputType="date"/>
+        <Spinner
+            android:id="@+id/spPassanger"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtPassanger"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imgATarget" />
+
+        <Spinner
+            android:id="@+id/spDeparture"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtDeparture"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imgATarget" />
+
+        <Spinner
+            android:id="@+id/spArrival"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtArrival"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imgATarget" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH BUS"
+        android:layout_marginTop="20dp"
+         android:layout_marginHorizontal="55dp"/>
+
+
+
+
+</LinearLayout>
